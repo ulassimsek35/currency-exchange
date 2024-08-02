@@ -1,66 +1,65 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Döviz Kuru Uygulaması / Currency Exchange Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Bu proje, kullanıcıların döviz kurlarını takip edebileceği, geçmiş döviz kurlarını sorgulayabileceği ve cüzdanlarında bulunan dövizleri yönetebileceği bir web uygulamasıdır. Laravel framework'ü kullanılarak geliştirilmiştir.
 
-## About Laravel
+This project is a web application where users can track exchange rates, query past exchange rates, and manage the currencies in their wallets. It is developed using the Laravel framework.
 
-Laravell is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Özellikler / Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Güncel döviz kurlarını görüntüleme / Viewing current exchange rates
+- Belirli bir tarihe ait döviz kurlarını sorgulama / Querying exchange rates for a specific date
+- Cüzdan özelliği ile döviz birimlerinin miktarlarını ve toplam ödenen tutarlarını görüntüleme / Viewing amounts and total paid amounts of currency units with the wallet feature
+- Alım ve satım işlemleri yaparak döviz cüzdanını güncelleme / Updating the currency wallet by performing buy and sell transactions
+- Yapılan işlemlerin geçmişini görüntüleme / Viewing the history of transactions
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Kullanım / Usage
 
-## Learning Laravel
+### Döviz Kurları / Exchange Rates
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Anasayfada güncel döviz kurlarını ve belirli bir tarihe ait döviz kurlarını görüntüleyebilirsiniz. Tarih seçimi yaparak, o tarihteki döviz kurlarını sorgulayabilirsiniz.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+On the homepage, you can view current exchange rates and exchange rates for a specific date. You can query exchange rates for a particular date by selecting a date.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Cüzdan / Wallet
 
-## Laravel Sponsors
+Sağ tarafta bulunan cüzdan bölümünde, sahip olduğunuz döviz birimlerinin miktarlarını ve toplam ödenen tutarlarını görüntüleyebilirsiniz.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+In the wallet section on the right, you can view the amounts and total paid amounts of the currencies you own.
 
-### Premium Partners
+### Alım ve Satım İşlemleri / Buy and Sell Transactions
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Tarih seçimi yapıldıktan sonra alım veya satım işlemi gerçekleştirebilirsiniz. Döviz birimi ve miktarını seçerek işlemi tamamlayabilirsiniz.
 
-## Contributing
+After selecting a date, you can perform a buy or sell transaction. Complete the transaction by selecting the currency unit and amount.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### İşlem Geçmişi / Transaction History
 
-## Code of Conduct
+Alt kısımda, daha önce yapılan alım ve satım işlemlerinin geçmişini görüntüleyebilirsiniz.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+At the bottom, you can view the history of previously performed buy and sell transactions.
 
-## Security Vulnerabilities
+## Proje Yapısı / Project Structure
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- `welcome.blade.php`: Ana görünüm dosyası, kullanıcı arayüzü ve HTML yapısı burada bulunur.
+- `main.js`: JavaScript dosyası, tarih seçimi ve alım/satım işlemleri gibi işlevleri içerir.
+- `ExchangeRateController.php`: Döviz kurlarını almak için kullanılan kontrolör.
+- `TransactionController.php`: Alım ve satım işlemlerini kaydetmek için kullanılan kontrolör.
+- `WalletController.php`: Cüzdan ve işlem geçmişini yönetmek için kullanılan kontrolör.
 
-## License
+- `welcome.blade.php`: Main view file containing the user interface and HTML structure.
+- `main.js`: JavaScript file containing functionalities such as date selection and buy/sell transactions.
+- `ExchangeRateController.php`: Controller used to fetch exchange rates.
+- `TransactionController.php`: Controller used to save buy and sell transactions.
+- `WalletController.php`: Controller used to manage the wallet and transaction history.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Katkıda Bulunma / Contributing
+
+Katkıda bulunmak isterseniz, lütfen bir çekme isteği (pull request) gönderin. Her türlü katkı ve geri bildirime açığız.
+
+If you want to contribute, please send a pull request. We welcome all contributions and feedback.
+
+## Lisans / License
+
+Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
+
+This project is licensed under the MIT License. For more information, see the `LICENSE` file.
