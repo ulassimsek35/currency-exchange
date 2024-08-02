@@ -52,13 +52,7 @@ At the bottom, you can view the history of previously performed buy and sell tra
 - `TransactionController.php`: Controller used to save buy and sell transactions.
 - `WalletController.php`: Controller used to manage the wallet and transaction history.
 
-## Katkıda Bulunma / Contributing
 
-Katkıda bulunmak isterseniz, lütfen bir çekme isteği (pull request) gönderin. Her türlü katkı ve geri bildirime açığız.
-
-If you want to contribute, please send a pull request. We welcome all contributions and feedback.
-
-## Lisans / License
 
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
 
