@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(to right, #00ab9b, #5959a3)
+}
+
+.input-group{
+    width: 30% !important;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+.customForm {
+    background-color: #6f76c3;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 25%;
+    display: none;
+}
+
+.selectCurrency{
+    width: -webkit-fill-available;
+}
+
+.resultDiv input {
+    background-color: #e9ecef; 
+    color: #6c757d;
+    border: 1px solid #ced4da;
+    cursor: not-allowed;
+}
